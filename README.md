@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a simplified **in-memory SQL query engine** built from scratch using **Python**. It allows users to execute basic SQL queries on CSV files through a **command-line interface (CLI)**.
 
@@ -40,13 +40,21 @@ The objective of this project is to:
 ## 🗂️ Project Structure
 
 mini-sql-engine/
+
 ├── cli.py
+
 ├── parser.py
+
 ├── engine.py
+
 ├── loader.py
+
 ├── data/
+
 │ ├── people.csv
+
 │ └── products.csv
+
 └── README.md
 
 
@@ -55,6 +63,7 @@ mini-sql-engine/
 ## ⚙️ Prerequisites
 
 - Python 3.x installed
+  
 - Command Prompt / Terminal
 
 ---
@@ -67,17 +76,27 @@ All valid queries and error test queries are shown below in **one place**.
 python cli.py
 
 SELECT * FROM people;
+
 SELECT name, age FROM people;
+
 SELECT * FROM people WHERE age > 30;
+
 SELECT * FROM people WHERE country = 'India';
+
 SELECT product, price FROM products WHERE price >= 200;
+
 SELECT COUNT(*) FROM people;
+
 SELECT COUNT(age) FROM people;
+
 SELECT COUNT(price) FROM products;
 
 SELCT * FROM people;
+
 SELECT salary FROM people;
+
 SELECT * FROM people WHERE age >> 30;
+
 SELECT * FROM employees;
 
 exit
@@ -95,7 +114,9 @@ SQL>
 ### Example Output
 
 {'id': '1', 'name': 'Alice', 'age': '30', 'country': 'USA'}
+
 {'id': '2', 'name': 'Bob', 'age': '25', 'country': 'India'}
+
 Result: 5
 
 
