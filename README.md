@@ -106,7 +106,9 @@ exit
 ### Expected Startup Output
 
 Mini SQL Engine
+
 Type 'exit' to quit
+
 SQL>
 
 ---
